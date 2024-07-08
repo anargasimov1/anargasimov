@@ -1,7 +1,7 @@
-*,*::after,*::before {
+* {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
   font-family: inherit
 }
 
@@ -12,19 +12,19 @@ html {
 
 @media only screen and (max-width: 75em) {
   html {
-      font-size:59%
+    font-size: 59%
   }
 }
 
 @media only screen and (max-width: 56.25em) {
   html {
-      font-size:56%;
+    font-size: 56%;
   }
 }
 
 @media only screen and (min-width: 112.5em) {
   html {
-      font-size:65%
+    font-size: 65%
   }
 }
 
@@ -33,8 +33,7 @@ body {
   position: relative;
   line-height: 1.5;
   font-family: sans-serif;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: auto;
   font-family: 'Source Sans Pro', sans-serif
 }
 
@@ -47,7 +46,10 @@ li {
   list-style: none
 }
 
-input:focus,button:focus,a:focus,textarea:focus {
+input:focus,
+button:focus,
+a:focus,
+textarea:focus {
   outline: none
 }
 
@@ -61,17 +63,17 @@ textarea {
 }
 
 .heading-primary {
-  font-size: 6rem;
+  font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
-  color: #111;
+  color: #948df0;
   font-weight: 800
 }
 
 @media only screen and (max-width: 37.5em) {
   .heading-primary {
-      font-size:4.5rem
+    font-size: 4.5rem
   }
 }
 
@@ -81,7 +83,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   .heading-sec__mb-bg {
-      margin-bottom:8rem
+    margin-bottom: 8rem
   }
 }
 
@@ -91,7 +93,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   .heading-sec__mb-med {
-      margin-bottom:8rem
+    margin-bottom: 8rem
   }
 }
 
@@ -131,7 +133,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .heading-sec__main::after {
-      top:calc(100% + 1.2rem)
+    top: calc(100% + 1.2rem)
   }
 }
 
@@ -148,7 +150,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .heading-sec__sub {
-      font-size:1.8rem
+    font-size: 1.8rem
   }
 }
 
@@ -176,7 +178,7 @@ textarea {
   display: inline-block;
   font-weight: 700;
   border-radius: 5px;
-  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform .3s
 }
 
@@ -213,42 +215,41 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   .sec-pad {
-      padding:8rem 0
+    padding: 8rem 0
   }
 }
 
 .text-primary {
   color: #333;
   font-size: 2.2rem;
-  text-align: center;
+  text-align: justify;
   width: 100%;
   line-height: 1.6
 }
 
 @media only screen and (max-width: 37.5em) {
   .text-primary {
-      font-size:2rem
+    font-size: 2rem
   }
 }
 
 .d-none {
-  display: none
+  display: none;
 }
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(../../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
-  position: relative
+  position: relative;
 }
 
 @media only screen and (max-width: 37.5em) {
   .home-hero {
-      height:unset;
-      min-height: unset
+    height: unset;
+    min-height: unset
   }
 }
 
@@ -257,13 +258,13 @@ textarea {
   top: 50%;
   transform: translateY(-50%);
   background: #fff;
-  box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: .5rem
 }
 
 @media only screen and (max-width: 56.25em) {
   .home-hero__socials {
-      display:none
+    display: none
   }
 }
 
@@ -276,7 +277,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .home-hero__mouse-scroll-cont {
-      display:none
+    display: none
   }
 }
 
@@ -288,12 +289,12 @@ textarea {
   width: 100%;
   display: block;
   padding: 1rem;
-  transition: background .3s;
+  transition: .3s;
   border-radius: 5px
 }
 
 .home-hero__social-icon-link:hover {
-  background: rgba(120,67,233,0.2)
+  background: rgba(120, 67, 233, 0.2)
 }
 
 .home-hero__social-icon-link--bd-none {
@@ -315,10 +316,10 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .home-hero__content {
-      padding:19rem 0 13rem 0;
-      margin: auto;
-      position: static;
-      transform: translate(0, 0)
+    padding: 19rem 0 13rem 0;
+    margin: auto;
+    position: static;
+    transform: translate(0, 0)
   }
 }
 
@@ -344,8 +345,8 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   .about__content {
-      grid-template-columns:1fr;
-      grid-gap: 8rem
+    grid-template-columns: 1fr;
+    grid-gap: 8rem
   }
 }
 
@@ -357,7 +358,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .about__content-title {
-      font-size:2.4rem
+    font-size: 2.4rem
   }
 }
 
@@ -394,31 +395,20 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   .projects__row {
-      grid-template-columns:1fr;
-      grid-gap: 2rem;
-      margin-bottom: 8rem
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 8rem
   }
 }
 
 @media only screen and (max-width: 56.25em) {
   .projects__row {
-      text-align:center
+    text-align: center
   }
 }
 
 .projects__row:last-child {
   margin-bottom: 0
-}
-
-.projects__row-img-cont {
-  overflow: hidden
-}
-
-.projects__row-img {
-  width: 100%;
-  display: block;
-  -o-object-fit: cover;
-  object-fit: cover
 }
 
 .projects__row-content {
@@ -431,7 +421,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   .projects__row-content {
-      align-items:center
+    align-items: center
   }
 }
 
@@ -443,7 +433,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .projects__row-content-title {
-      font-size:2.4rem
+    font-size: 2.4rem
   }
 }
 
@@ -457,18 +447,17 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .projects__row-content-desc {
-      font-size:1.7rem
+    font-size: 1.7rem
   }
 }
 
 .contact {
-  background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center
 }
 
 .contact__form-container {
-  box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background: white;
   padding: 4rem;
   margin-top: 6rem;
@@ -481,7 +470,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .contact__form-container {
-      padding:3rem
+    padding: 3rem
   }
 }
 
@@ -491,7 +480,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .contact__form-field {
-      margin-bottom:3rem
+    margin-bottom: 3rem
   }
 }
 
@@ -575,13 +564,12 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .contact__btn {
-      width:100%
+    width: 100%
   }
 }
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative
@@ -589,8 +577,8 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .project-cs-hero {
-      height:unset;
-      min-height: unset
+    height: unset;
+    min-height: unset
   }
 }
 
@@ -603,10 +591,10 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .project-cs-hero__content {
-      padding:19rem 0 13rem 0;
-      margin: auto;
-      position: static;
-      transform: translate(0, 0)
+    padding: 19rem 0 13rem 0;
+    margin: auto;
+    position: static;
+    transform: translate(0, 0)
   }
 }
 
@@ -634,7 +622,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .project-details__content-title {
-      font-size:2.4rem
+    font-size: 2.4rem
   }
 }
 
@@ -678,7 +666,7 @@ textarea {
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
   font-size: 1.6rem;
-  background: rgba(153,153,153,0.2);
+  background: rgba(153, 153, 153, 0.2);
   border-radius: 5px;
   font-weight: 600;
   color: #777
@@ -694,10 +682,10 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .project-details__links-btn {
-      margin-right:0;
-      width: 70%;
-      margin-bottom: 2rem;
-      text-align: center
+    margin-right: 0;
+    width: 70%;
+    margin-bottom: 2rem;
+    text-align: center
   }
 }
 
@@ -707,7 +695,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .project-details__links-btn:last-child {
-      margin:0
+    margin: 0
   }
 }
 
@@ -717,7 +705,7 @@ textarea {
   z-index: 1000;
   background: #000;
   background: #fff;
-  box-shadow: 0 10px 100px rgba(0,0,0,0.1)
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1)
 }
 
 .header__content {
@@ -729,7 +717,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   .header__content {
-      padding:0 2rem
+    padding: 0 2rem
   }
 }
 
@@ -746,9 +734,9 @@ textarea {
 }
 
 .header__logo-img-cont {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50px;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
   overflow: hidden;
   margin-right: 1.5rem;
   background: #7843E9
@@ -756,9 +744,9 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   .header__logo-img-cont {
-      width:4.5rem;
-      height: 4.5rem;
-      margin-right: 1.2rem
+    width: 5.2rem;
+    height: 5.2rem;
+    margin-right: 1.2rem
   }
 }
 
@@ -772,12 +760,6 @@ textarea {
   display: block
 }
 
-.header__logo-sub {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px
-}
 
 .header__links {
   display: flex
@@ -785,7 +767,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .header__links {
-      display:none
+    display: none
   }
 }
 
@@ -806,20 +788,21 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   .header__link {
-      padding:3rem 1.8rem;
-      font-size: 1.5rem
+    padding: 3rem 1.8rem;
+    font-size: 1.5rem
   }
 }
 
 .header__main-ham-menu-cont {
   display: none;
   width: 3rem;
-  padding: 2.2rem 0
+  padding: 2.2rem 0;
+  background: transparent;
 }
 
 @media only screen and (max-width: 37.5em) {
   .header__main-ham-menu-cont {
-      display:block
+    display: block
   }
 }
 
@@ -839,20 +822,20 @@ textarea {
   visibility: hidden;
   opacity: 0;
   transition: all .3s;
-  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1)
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1)
 }
 
 .header__sm-menu--active {
-  visibility: hidden;
+  visibility:visible;
   opacity: 0
 }
 
 @media only screen and (max-width: 37.5em) {
   .header__sm-menu--active {
-      visibility:visible;
-      opacity: 1
+    visibility: visible;
+    opacity: 1
   }
 }
 
@@ -883,7 +866,7 @@ textarea {
 }
 
 .main-footer {
-  background: #000;
+  background: #d88d8d;
   color: #fff
 }
 
@@ -895,13 +878,13 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   .main-footer__upper {
-      padding:6rem 0
+    padding: 6rem 0
   }
 }
 
 @media only screen and (max-width: 37.5em) {
   .main-footer__upper {
-      display:block
+    display: block
   }
 }
 
@@ -911,7 +894,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   .main-footer__row-1 {
-      margin-bottom:5rem
+    margin-bottom: 5rem
   }
 }
 
@@ -923,7 +906,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   .main-footer__row-2 {
-      width:100%
+    width: 100%
   }
 }
 
@@ -964,7 +947,7 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   .main-footer__lower {
-      padding:3.5rem 0
+    padding: 3.5rem 0
   }
 }
 
@@ -978,7 +961,7 @@ textarea {
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
   font-size: 1.6rem;
-  background: rgba(153,153,153,0.2);
+  background: rgba(153, 153, 153, 0.2);
   border-radius: 5px;
   font-weight: 600;
   color: #666
@@ -1010,14 +993,31 @@ textarea {
 
 @keyframes wheel {
   to {
-      opacity: 0;
-      top: 27px
+    opacity: 0;
+    top: 27px
   }
 }
 
 @-webkit-keyframes wheel {
   to {
-      opacity: 0;
-      top: 27px
+    opacity: 0;
+    top: 27px
   }
+}
+
+i{
+  font-size: 20px;
+  margin-left: 10px;
+}
+.fa-facebook{
+  color: #7843E9;
+}
+.fa-instagram{
+  color: rgb(225, 21, 143);
+}
+.fa-linkedin{
+  color: rgb(2, 2, 118);
+}
+.fa-youtube{
+  color: rgb(225, 71, 66);
 }

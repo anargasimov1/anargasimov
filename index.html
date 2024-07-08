@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scr/style.css">
+    <link rel="stylesheet" href="./scr/css/style.css">
     <title>Anar Gasimov</title>
+    <script src="https://kit.fontawesome.com/c378ec51b4.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -13,9 +14,8 @@
         <div class="header__content">
             <div class="header__logo-container">
                 <div class="header__logo-img-cont">
-                    <img src="./scr/images/photo_2024-05-17_19-50-40.jpg" alt="Logo" class="header__logo-img">
+                    <img src="./scr/images/Anar gasimov.jpg" alt="Logo" class="header__logo-img">
                 </div>
-                <span class="header__logo-sub">Anar Gasimov</span>
             </div>
             <div class="header__main">
                 <ul class="header__links">
@@ -35,18 +35,16 @@
                         <a href="./#contact" class="header__link"> Əlaqə </a>
                     </li>
                 </ul>
-                <div class="header__main-ham-menu-cont">
-                    <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu">
-                    <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
-                        class="header__main-ham-menu-close d-none">
-                </div>
+                <button type="button" style="font-size: 3rem;" class="header__main-ham-menu-cont">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
         <div class="header__sm-menu">
             <div class="header__sm-menu-content">
-                <ul class="header__sm-menu-links">
+                <ul id="close" class="header__sm-menu-links">
                     <li class="header__sm-menu-link">
-                        <a href="./"> Ana Səhifə </a>
+                        <a href="#"> Ana Səhifə </a>
                     </li>
 
                     <li class="header__sm-menu-link">
@@ -69,56 +67,23 @@
     </header>
     <section class="home-hero">
         <div class="home-hero__content">
-            <h1 class="heading-primary">Hey, I'm Ram Maheshwari</h1>
+            <h1 class="heading-primary"></h1>
             <div class="home-hero__info">
                 <p class="text-primary">
-                    A Result-Oriented Web Developer building and managing Websites and
-                    Web Applications that leads to the success of the overall product
+                    Mən Anar Qasımov, Məhsulun ümumi uğuruna töhfə verən veb saytlar və veb tətbiqləri yaradan və idarə
+                    edən, nəticəyə
+                    yönəlik bir veb tərtibatçısıyam. Mənim əsas məqsədim, istifadəçi təcrübəsini artırmaq, müasir
+                    texnologiyalardan istifadə edərək funksional və estetik baxımdan cəlbedici veb həllər yaratmaqdır.
+                    Layihələri vaxtında və büdcə daxilində tamamlayaraq, müştərilərin tələblərinə uyğun fərdi həllər
+                    təqdim edirəm. Həmçinin mövcud lahiyələrdə baş vermiş xətaların səbəblərni ararşdırmağla həll etməyə
+                    köməklik göstərirəm. Hər bir layihədə məqsədim, müştəri məmnuniyyətini maksimum dərəcədə təmin etmək
+                    və
+                    uzunmüddətli nəticələr əldə etməkdir.
                 </p>
             </div>
             <div class="home-hero__cta">
-                <a href="./#projects" class="btn btn--bg">Projects</a>
+                <a href="./#projects" class="btn btn--bg">Proyeklər</a>
             </div>
-        </div>
-        <div class="home-hero__socials">
-            <div class="home-hero__social">
-                <a href="https://linkedin.com/in/rammcodes" class="home-hero__social-icon-link" rel="noreferrer"
-                    target="_blank">
-                    <img src="./assets/svg/linkedin-dark.svg" alt="Ram Maheshwari Linkedin Profile"
-                        class="home-hero__social-icon">
-                </a>
-            </div>
-            <div class="home-hero__social">
-                <a href="https://twitter.com/rammcodes" class="home-hero__social-icon-link" rel="noreferrer"
-                    target="_blank">
-                    <img src="./assets/svg/twitter-dark.svg" alt="RammCodes Twitter Profile"
-                        class="home-hero__social-icon">
-                </a>
-            </div>
-            <div class="home-hero__social">
-                <a href="https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg"
-                    class="home-hero__social-icon-link home-hero__social-icon-link--bd-none" rel="noreferrer"
-                    target="_blank">
-                    <img src="./assets/svg/yt-dark.svg" alt="RammCodes Youtube Channel" class="home-hero__social-icon">
-                </a>
-            </div>
-            <div class="home-hero__social">
-                <a href="https://github.com/rammcodes" class="home-hero__social-icon-link" rel="noreferrer"
-                    target="_blank">
-                    <img src="./assets/svg/github-dark.svg" alt="RammCodes Github Profile"
-                        class="home-hero__social-icon">
-                </a>
-            </div>
-
-            <div class="home-hero__social">
-                <a href="https://dev.to/rammcodes" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
-                    <img src="./assets/svg/book-dark.svg" alt="RammCodes DEV.to Blog Profile"
-                        class="home-hero__social-icon">
-                </a>
-            </div>
-        </div>
-        <div class="home-hero__mouse-scroll-cont">
-            <div class="mouse"></div>
         </div>
     </section>
     <section id="about" class="about sec-pad">
@@ -161,20 +126,24 @@
                     <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
                 </div>
                 <div class="about__content-skills">
-                    <h3 class="about__content-title">My Skills</h3>
+                    <h3 class="about__content-title">Mənim bacarığlarım</h3>
                     <div class="skills">
                         <div class="skills__skill">HTML</div>
                         <div class="skills__skill">CSS</div>
                         <div class="skills__skill">JavaScript</div>
                         <div class="skills__skill">React</div>
-                        <div class="skills__skill">Wordpress</div>
-                        <div class="skills__skill">PHP</div>
+                        <div class="skills__skill">SCSS</div>
+                        <div class="skills__skill">JAVA</div>
                         <div class="skills__skill">SASS</div>
                         <div class="skills__skill">GIT</div>
                         <div class="skills__skill">Github</div>
                         <div class="skills__skill">Responsive Design</div>
-                        <div class="skills__skill">SEO</div>
-                        <div class="skills__skill">Terminal</div>
+                        <div class="skills__skill">Spring Boot</div>
+                        <div class="skills__skill">RestFull</div>
+                        <div class="skills__skill">TypeScript</div>
+                        <div class="skills__skill">RestFull</div>
+                        <div class="skills__skill">RestFull</div>
+                        <div class="skills__skill">RestFull</div>
                     </div>
                 </div>
             </div>
@@ -193,8 +162,6 @@
             <div class="projects__content">
                 <div class="projects__row">
                     <div class="projects__row-img-cont">
-                        <img src="./assets/jpeg/dopefolio.jpeg" alt="Software Screenshot" class="projects__row-img"
-                            loading="lazy">
                     </div>
                     <div class="projects__row-content">
                         <h3 class="projects__row-content-title">Dopefolio</h3>
@@ -207,83 +174,38 @@
                         <a class="btn btn--med btn--theme dynamicBgClr" href="/project-1" target="_blank">Case Study</a>
                     </div>
                 </div>
-                <div class="projects__row">
-                    <div class="projects__row-img-cont">
-                        <img src="./assets/jpeg/wilsonport.jpeg" alt="Software Screenshot" class="projects__row-img"
-                            loading="lazy">
-                    </div>
-                    <div class="projects__row-content">
-                        <h3 class="projects__row-content-title">Wilsonport</h3>
-                        <p class="projects__row-content-desc">
-                            Wilsonport is a multiservice logistics and transport company and
-                            I created their website from scratch using the frontend tools I
-                            know.
-                        </p>
-                        <a class="btn btn--med btn--theme dynamicBgClr" href="/project-2" target="_blank">Case Study</a>
-                    </div>
-                </div>
-                <div class="projects__row">
-                    <div class="projects__row-img-cont">
-                        <img src="./assets/jpeg/boreal-coffee-clone.jpeg" alt="Software Screenshot"
-                            class="projects__row-img" loading="lazy">
-                    </div>
-                    <div class="projects__row-content">
-                        <h3 class="projects__row-content-title">Boreal Coffee Clone</h3>
-                        <p class="projects__row-content-desc">
-                            I re-created the frontend of Boreal Coffee's official web app
-                            because I got attracted to their beautiful UI. It was a great
-                            experience for me to build the entire frontend.
-                        </p>
-                        <a class="btn btn--med btn--theme dynamicBgClr" href="/project-3" target="_blank">Case Study</a>
-                    </div>
-                </div>
-                <div class="projects__row">
-                    <div class="projects__row-img-cont">
-                        <img src="./assets/jpeg/crown-template.jpeg" alt="Software Screenshot" class="projects__row-img"
-                            loading="lazy">
-                    </div>
-                    <div class="projects__row-content">
-                        <h3 class="projects__row-content-title">Crown Template</h3>
-                        <p class="projects__row-content-desc">
-                            Crown is a web template that I created targeting the restaurant
-                            and food industry which anyone can use to present their business
-                            online.
-                        </p>
-                        <a class="btn btn--med btn--theme dynamicBgClr" href="/project-4" target="_blank">Case Study</a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
     <section id="contact" class="contact sec-pad dynamicBg">
         <div class="main-container">
             <h2 class="heading heading-sec heading-sec__mb-med">
-                <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+                <span class="heading-sec__main heading-sec__main--lt">əlaqə</span>
                 <span class="heading-sec__sub heading-sec__sub--lt">
-                    Feel free to Contact me by submitting the form below and I will get
-                    back to you as soon as possible
+                    Aşağıdakı formanı təqdim etməklə mənimlə əlaqə saxlamaqdan çəkinməyin və ən qısa zamanda sizinlə əlaqə saxlayacağam
                 </span>
             </h2>
             <div class="contact__form-container">
                 <form action="#" class="contact__form" method="post"><input type="hidden" name="form-name"
                         value="form 1">
                     <div class="contact__form-field">
-                        <label class="contact__form-label" for="name">Name</label>
-                        <input required="" placeholder="Enter Your Name" type="text" class="contact__form-input"
+                        <label class="contact__form-label" for="name">Ad</label>
+                        <input required="" placeholder="Adınızını daxil edin" type="text" class="contact__form-input"
                             name="name" id="name">
                     </div>
                     <div class="contact__form-field">
                         <label class="contact__form-label" for="email">Email</label>
-                        <input required="" placeholder="Enter Your Email" type="email" class="contact__form-input"
+                        <input required="" placeholder="Emailnizi daxil edin" type="email" class="contact__form-input"
                             name="email" id="email">
                     </div>
                     <div class="contact__form-field">
-                        <label class="contact__form-label" for="message">Message</label>
+                        <label class="contact__form-label" for="message">Mesaj</label>
                         <textarea required="" cols="30" rows="10" class="contact__form-input"
-                            placeholder="Enter Your Message" name="message" id="message"></textarea>
+                            placeholder="Mesajınızı daxil edin" name="message" id="message"></textarea>
                     </div>
                     <button type="submit" class="btn btn--theme contact__btn">
-                        Submit
+                        göndər
                     </button>
                 </form>
             </div>
@@ -294,44 +216,35 @@
             <div class="main-footer__upper">
                 <div class="main-footer__row main-footer__row-1">
                     <h2 class="heading heading-sm main-footer__heading-sm">
-                        <span>Social</span>
+                        <span>Sosial medİa</span>
                     </h2>
                     <div class="main-footer__social-cont">
                         <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/rammcodes">
-                            <img class="main-footer__icon" src="./assets/png/linkedin-ico.png"
-                                alt="Ram Maheshwari Linkedin Profile">
+                            <i class="fa-brands fa-facebook"></i>
                         </a>
                         <a target="_blank" rel="noreferrer" href="https://github.com/rammcodes">
-                            <img class="main-footer__icon" src="./assets/png/github-ico.png"
-                                alt="RammCodes Github Profile">
+                            <i class="fa-brands fa-instagram"></i>
                         </a>
                         <a target="_blank" rel="noreferrer" href="https://twitter.com/rammcodes">
-                            <img class="main-footer__icon" src="./assets/png/twitter-ico.png"
-                                alt="RammCodes Twitter Profile">
-                        </a>
-
-                        <a target="_blank" rel="noreferrer" href="https://dev.to/rammcodes">
-                            <img class="main-footer__icon" src="./assets/png/blog-ico.png"
-                                alt="RammCodes DEV.to Blog Profile">
+                            <i class="fa-brands fa-linkedin"></i>
                         </a>
                         <a target="_blank" rel="noreferrer"
                             href="https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg">
-                            <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/yt-ico.png"
-                                alt="RammCodes Youtube Channel">
+                            <i class="fa-brands fa-youtube"></i>
                         </a>
                     </div>
                 </div>
                 <div class="main-footer__row main-footer__row-2">
-                    <h2 class="heading heading-sm text-lt">Ram Maheshwari</h2>
+                    <h2 class="heading heading-sm text-lt">Anar Qasımov</h2>
                     <p class="main-footer__short-desc">
-                        A Frontend focused Web Developer building the Frontend of Websites
-                        and Web Applications that leads to the success of the overall
-                        product
+                        Siz xəyal edin biz onu gerçəkləşdirək
                     </p>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="./scr/js/main.js"></script>
 </body>
 
 </html>
