@@ -1,7 +1,13 @@
 const btn = document.querySelector(".header__main-ham-menu-cont"),
     menu = document.querySelector(".header__sm-menu"),
     clos = document.getElementById("close"),
-    text = document.querySelector(".heading-primary")
+    text = document.querySelector(".heading-primary"),
+    url = "https://anargasimov1.glitch.me/messages",
+    names = document.getElementById("name"),
+    email = document.getElementById("email"),
+    message = document.getElementById("message"),
+    send = document.getElementById("send")
+phone = document.getElementById("phone");
 
 let toggle = false;
 
@@ -23,12 +29,42 @@ clos.onclick = () => {
 }
 
 
-let content ="saytıma xoş gəlmİsİnİz!"
+let content = "saytıma xoş gəlmİsİnİz!"
 
 
 for (let i = 0; i < content.length; ++i) {
     setTimeout(() => {
         text.innerHTML += `${content[i]}`;
 
-    }, i*100);
+    }, i * 100);
 }
+
+
+
+send.onclick = () => {
+    let values = {
+        name: names.value,
+        email: email.value,
+        message: message.value,
+        phone: phone.value
+    }
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+
+        body: JSON.stringify(values)
+    })
+
+
+    names.value = "",
+        email.value = "",
+        message.value = "",
+        phone.value = "";
+}
+
+fetch(url)
+    .then(r => r.json())
+    .then(d => console.log(d))

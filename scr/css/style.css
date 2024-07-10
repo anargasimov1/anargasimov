@@ -68,7 +68,8 @@ textarea {
   letter-spacing: 3px;
   text-align: center;
   color: #948df0;
-  font-weight: 800
+  font-weight: 800;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -220,11 +221,12 @@ textarea {
 }
 
 .text-primary {
-  color: #333;
+  color: #150662c1;
   font-size: 2.2rem;
   text-align: justify;
   width: 100%;
-  line-height: 1.6
+  line-height: 1.6;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -245,6 +247,7 @@ textarea {
   max-height: 120rem;
   position: relative;
 }
+
 
 @media only screen and (max-width: 37.5em) {
   .home-hero {
@@ -391,6 +394,10 @@ textarea {
   grid-template-columns: 1.5fr 1fr;
   grid-gap: 5rem;
   margin-bottom: 11rem
+}
+
+.projects__row-img-cont>img {
+  width: 80%;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -828,7 +835,7 @@ textarea {
 }
 
 .header__sm-menu--active {
-  visibility:visible;
+  visibility: visible;
   opacity: 0
 }
 
@@ -866,7 +873,7 @@ textarea {
 }
 
 .main-footer {
-  background: #d88d8d;
+  background: #06139e;
   color: #fff
 }
 
@@ -1005,19 +1012,27 @@ textarea {
   }
 }
 
-i{
+i {
   font-size: 20px;
   margin-left: 10px;
 }
-.fa-facebook{
+
+.fa-facebook {
   color: #7843E9;
 }
-.fa-instagram{
+
+.fa-instagram {
   color: rgb(225, 21, 143);
 }
-.fa-linkedin{
-  color: rgb(2, 2, 118);
+
+.fa-linkedin {
+  color: rgb(3, 3, 72);
 }
-.fa-youtube{
+
+.fa-youtube {
   color: rgb(225, 71, 66);
+}
+
+.fa-whatsapp {
+  color: green;
 }
