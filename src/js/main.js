@@ -1,13 +1,13 @@
 const btn = document.querySelector(".header__main-ham-menu-cont"),
     menu = document.querySelector(".header__sm-menu"),
     clos = document.getElementById("close"),
-    text = document.querySelector(".heading-primary"),
+    text = document.querySelector(".head_text"),
     url = "https://anargasimov1.glitch.me/messages",
     names = document.getElementById("name"),
     email = document.getElementById("email"),
     message = document.getElementById("message"),
     send = document.getElementById("send")
-    phone = document.getElementById("phone")
+phone = document.getElementById("phone")
 
 
 
@@ -32,14 +32,14 @@ clos.onclick = () => {
 }
 
 
-let content = "saytıma xoş gəlmİsİnİz!"
+let content = "Saytıma xoş gəlmisiz burada sizə fəaliyyət istiqamətim haqqında və proyektərim haqqında məlumatlar verəcəm..."
 
 
 for (let i = 0; i < content.length; ++i) {
     setTimeout(() => {
         text.innerHTML += `${content[i]}`;
 
-    }, i * 100);
+    }, i * 50);
 }
 
 

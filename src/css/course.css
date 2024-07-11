@@ -28,7 +28,7 @@
 }
 
 
-video {
+.course-card_video>video {
     width: 400px;
 }
 
@@ -76,5 +76,21 @@ video {
 }
 
 .copy>span {
-color: rgba(44, 217, 44, 0.815);
+    color: rgba(44, 217, 44, 0.815);
+}
+
+@media only screen and (max-width: 800px) {
+
+    .course-card_video>video {
+        width: 280px;
+    }
+
+    .course-card {
+        width: 300px;
+    }
+
+    .cards {
+        padding: 2px;
+        justify-content: center;
+    }
 }

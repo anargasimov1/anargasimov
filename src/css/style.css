@@ -227,6 +227,7 @@ textarea {
   width: 100%;
   line-height: 1.6;
   font-style: italic;
+
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -242,12 +243,15 @@ textarea {
 .home-hero {
   color: #fff;
   background-position: center;
-  height: 100vh;
-  min-height: 80rem;
-  max-height: 120rem;
+  min-height: 30rem;
   position: relative;
+  background-color: #000000f7;
 }
-
+.head_text{
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+}
 
 @media only screen and (max-width: 37.5em) {
   .home-hero {
@@ -310,11 +314,14 @@ textarea {
 
 .home-hero__content {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 90rem;
-  width: 92%
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -328,12 +335,8 @@ textarea {
 
 .home-hero__info {
   margin: 3rem auto 0 auto;
-  max-width: 80rem
-}
-
-.home-hero__cta {
-  margin-top: 5rem;
-  text-align: center
+  max-width: 100%;
+  width: 100%;
 }
 
 .about {
@@ -449,7 +452,8 @@ textarea {
   color: #666;
   max-width: 60rem;
   line-height: 1.7;
-  margin-bottom: 3rem
+  margin-bottom: 3rem;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 37.5em) {
