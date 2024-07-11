@@ -7,7 +7,10 @@ const btn = document.querySelector(".header__main-ham-menu-cont"),
     email = document.getElementById("email"),
     message = document.getElementById("message"),
     send = document.getElementById("send")
-phone = document.getElementById("phone");
+    phone = document.getElementById("phone")
+
+
+
 
 let toggle = false;
 
