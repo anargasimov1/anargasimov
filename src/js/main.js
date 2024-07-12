@@ -6,8 +6,8 @@ const btn = document.querySelector(".header__main-ham-menu-cont"),
     names = document.getElementById("name"),
     email = document.getElementById("email"),
     message = document.getElementById("message"),
-    send = document.getElementById("send")
-phone = document.getElementById("phone")
+    send = document.getElementById("send"),
+    phone = document.getElementById("phone");
 
 
 
@@ -32,7 +32,7 @@ clos.onclick = () => {
 }
 
 
-let content = "Saytıma xoş gəlmisiz burada sizə fəaliyyət istiqamətim haqqında və proyektərim haqqında məlumatlar verəcəm..."
+let content = "Sizi saytımda görməyimə çox şadam. Burada sizə özüm haqqında həmçinin proyektlərim və fəaliyyət istiqamətlərim haqqında məlumatlar verəcəm..."
 
 
 for (let i = 0; i < content.length; ++i) {
@@ -42,32 +42,73 @@ for (let i = 0; i < content.length; ++i) {
     }, i * 50);
 }
 
+const namerror = document.getElementById("name_error"),
+    phonerror = document.getElementById("phone_error"),
+    emilerror = document.getElementById("email_error"),
+    messagerror = document.getElementById("message_error")
 
 
 send.onclick = () => {
-    let values = {
-        name: names.value,
-        email: email.value,
-        message: message.value,
-        phone: phone.value
+    if (names.value.trim() == "") {
+        namerror.innerText = "*Adınızı daxil edin!"
+    }
+    else {
+        namerror.innerText = "";
+    }
+    if (phone.value == "") {
+        phonerror.innerText = "*Nömrənizi daxil edin!"
+    }
+    else {
+        phonerror.innerText = "";
+    }
+    if (phone.value.length > 1 && phone.value.length < 9) {
+        phonerror.innerText = "*Nömrəniz formata uyğun deyil!"
+    }
+    else {
+        phone.innerText = "";
+    }
+    if (email.value.trim() == "") {
+        emilerror.innerText = "*Emailnizi daxil edin"
+    }
+    else {
+        emilerror.innerText = "";
+    }
+    if (message.value.trim() == "") {
+        messagerror.innerText = "*Mesajınızı daxil edin!"
+    }
+    else {
+        messagerror.innerText = "";
     }
 
-    fetch(url, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
+    if (names !== "" && phone.value !== "" && email.value !== "" && message.value !== "") {
 
-        body: JSON.stringify(values)
-    })
+        let values = {
+            name: names.value,
+            email: email.value,
+            message: message.value,
+            phone: phone.value
+        }
 
+        fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
 
-    names.value = "",
-        email.value = "",
-        message.value = "",
-        phone.value = "";
+            body: JSON.stringify(values)
+        })
+            .then(r => {
+                if (r.ok) {
+                    alert("Mesajınız uğurla göndərildi!");
+                    names.value = "",
+                        email.value = "",
+                        message.value = "",
+                        phone.value = "";
+                }
+            })
+    }
 }
 
-fetch(url)
-    .then(r => r.json())
-    .then(d => console.log(d))
+
+
+

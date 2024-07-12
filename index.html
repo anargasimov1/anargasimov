@@ -26,7 +26,7 @@
             <div class="header__main">
                 <ul class="header__links">
                     <li class="header__link-wrapper">
-                        <a href="./" class="header__link"> Anar Səhifə </a>
+                        <a href="./" class="header__link"> Ana Səhifə </a>
                     </li>
                     <li class="header__link-wrapper">
                         <a href="./#about" class="header__link">Haqqımda </a>
@@ -74,20 +74,24 @@
 
     <!-- home page -->
 
-    <section class="home-hero">
-        <div class="home-hero__content">
-            <p class="head_text">
-            </p>
 
-        </div>
-    </section>
 
 
     <!-- about me -->
 
 
-    <section id="about" class="about sec-pad">
-        <div class="main-container">
+    <section  class="about sec-pad">
+        <div class="home-page-swiper">
+            <div class="swiper-slide">
+                <img src="./src/images/arafon1.jpg" alt="">
+                <img src="./src/images/collective.jpg" alt="">
+                <img src="./src/images/IMG-20230915-WA0010.jpg" alt="">
+                <img src="./src/images/IMG-20230915-WA0016.jpg" alt="">
+                <img src="./src/images/neü diplom.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="about" class="main-container">
             <h2 class="heading heading-sec heading-sec__mb-med">
                 <span class="heading-sec__main">Haqqımda</span>
 
@@ -97,20 +101,24 @@
                     <h3 class="about__content-title">Qısa Məlumat</h3>
                     <div class="about__content-details">
                         <p class="about__content-details-para">
-                            Mən ümumi məhsulun uğuruna səbəb olan Vebsaytların və Veb Tətbiqlərinin Front-endini quran
-                            və idarə edən Frontend Focused Web Developerəm. Layihələr bölməsində işlərimdən bəzilərinə
-                            baxın.
+                            Mən Full-stack developer və QA tester kimi bir neçə layihədə uğurla çalışmışam.
+                            Proqramlaşdırma və veb inkişafı sahəsində iki ildən çox təcrübəyə sahibəm və bu müddət
+                            ərzində müstəqil işləməyi, komanda ilə əməkdaşlıq etməyi və texnologiyaları tez bir zamanda
+                            mənimsəməyi öyrənmişəm. Həmçinin, kodları test etmək, səhvləri aşkar etmək və həll etmək
+                            üzrə təcrübəm var.
                         </p>
                         <p class="about__content-details-para">
-                            Mən həmçinin Web İnkişafında illər ərzində öyrəndiyim şeylərlə bağlı məzmunu paylaşmağı
-                            xoşlayıram ki, bu, Dev İcmasının digər insanlara kömək edə bilsin. Veb İnkişafı və
-                            Proqramlaşdırma ilə bağlı faydalı məzmun göndərdiyim Linkedin və Instagram-da məni
-                            izləməkdən çekinmeyin
+                            Proqramlaşdırmaya olan marağım və məsuliyyətli yanaşmam sayəsində özümü daim inkişaf
+                            etdirməyə və yeni biliklər əldə etməyə çalışıram. Bu müddətdə əldə etdiyim bilik və
+                            təcrübəmi Dev İcması ilə paylaşmağı xoşlayıram. <a target="_blank"
+                                href="https://www.linkedin.com/in/anargasimov89">Linkedin</a> və <a target="_blank"
+                                href="https://www.instagram.com/anargasim/">Instagram</a>-da Veb İnkişafı və
+                            Proqramlaşdırma ilə bağlı faydalı məzmun göndərərək, həmkarlarıma və bu sahədə yeni
+                            başlayanlara kömək etməyə çalışıram.
                         </p>
                         <p class="about__content-details-para">
-                            Mən töhfə verə biləcəyim, öyrənə biləcəyim və inkişaf edə biləcəyim İş imkanlarına açığım.
-                            Əgər mənim bacarıq və təcrübəmə uyğun yaxşı bir fürsətiniz varsa, mənimlə əlaqə saxlamaqdan
-                            çəkinməyin.
+                            Yeni öyrənmə və inkişaf imkanları axtarışındayam. Bacarıq və təcrübələrimə uyğun bir iş
+                            imkanı varsa, əlaqə saxlamaqdan çəkinməyin.
                         </p>
                     </div>
                     <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">əlaqə</a>
@@ -195,8 +203,9 @@
                             keçid</a>
                     </div>
                 </div>
-                <h3 style="font-size: 20px; color: rgba(23, 23, 233, 0.861);">Bu proyektlərimin sadəcə bir hissədir.
-                    Əlbətdə ki, proyektlər davam edir...</h3>
+                <h3 class="proyekt">Bu proyektlərimin sadəcə bir hissədir...
+                    Daha ətraflı mənim <a target="_blank" href="https://github.com/anargasimov1"><i
+                            class="fa-regular fa-hand-point-right"></i>Github</a> hesabımdan tanış ola bilərsiz</h3>
 
             </div>
         </div>
@@ -301,24 +310,30 @@
             </h2>
             <div class="contact__form-container">
                 <div class="contact__form-field">
-                    <label class="contact__form-label" for="name">Ad</label>
-                    <input required="" placeholder="Adınızını daxil edin" type="text" class="contact__form-input"
-                        name="name" id="name">
+                    <label class="contact__form-label" for="name">Ad
+                        <input required="" placeholder="Adınızını daxil edin" type="text" class="contact__form-input"
+                            name="name" id="name">
+                        <p id="name_error" class="error"></p>
+
                 </div>
                 <div class="contact__form-field">
-                    <label class="contact__form-label" for="phone">telefon</label>
+                    <label class="contact__form-label" for="phone">Telefon</label>
                     <input required="" placeholder="nümunə 0551234567" type="number" class="contact__form-input"
                         name="phone" id="phone">
+                    <p id="phone_error" class="error"></p>
                 </div>
                 <div class="contact__form-field">
                     <label class="contact__form-label" for="email">Email</label>
                     <input required="" placeholder="Emailnizi daxil edin" type="email" class="contact__form-input"
                         name="email" id="email">
+                    <p id="email_error" class="error"></p>
                 </div>
                 <div class="contact__form-field">
                     <label class="contact__form-label" for="message">Mesaj</label>
+
                     <textarea required="" cols="30" rows="10" class="contact__form-input"
                         placeholder="Mesajınızı daxil edin" name="message" id="message"></textarea>
+                    <p id="message_error" class="error"></p>
                 </div>
                 <button id="send" type="button" class="btn btn--theme contact__btn">
                     göndər
@@ -336,7 +351,7 @@
             <div class="main-footer__upper">
                 <div class="main-footer__row main-footer__row-1">
                     <h2 class="heading heading-sm main-footer__heading-sm">
-                        <span>Sosial medİa</span>
+                        <span style="color: rgba(45, 43, 43, 0.824);">Sosial medİa</span>
                     </h2>
                     <div class="main-footer__social-cont">
                         <a target="_blank" rel="noreferrer" href="https://wa.link/qj6pp9">
@@ -359,15 +374,16 @@
                     </div>
                 </div>
                 <div class="main-footer__row main-footer__row-2">
-                    <h2 class="heading heading-sm text-lt">Anar Qasımov</h2>
+                    <h2 style="color: rgb(75, 72, 72); font-style: italic;" class="heading heading-sm text-lt">Anar
+                        Qasımov</h2>
                     <p class="main-footer__short-desc">
-                        <i class="fa-solid fa-mobile"></i>
-                        (055)-704-90-50
+                        <i class="fa-solid fa-phone-volume"></i>
+                        (055)-701-90-50
                     </p>
                 </div>
 
             </div>
-            <p class="copy">&copy; Bütün huqular qorunur. <span>Powered by Anar Gasimov</span></p>
+            <p class="copy">&copy; Powered by Anar Gasimov</p>
         </div>
 
     </footer>
