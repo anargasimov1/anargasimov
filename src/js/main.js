@@ -1,7 +1,7 @@
 const btn = document.querySelector(".header__main-ham-menu-cont"),
     menu = document.querySelector(".header__sm-menu"),
     clos = document.getElementById("close"),
-    text = document.querySelector(".head_text"),
+    text = document.getElementById("head_text"),
     url = "https://anargasimov1.glitch.me/messages",
     names = document.getElementById("name"),
     email = document.getElementById("email"),
@@ -108,7 +108,6 @@ send.onclick = () => {
             })
     }
 }
-
 
 
 

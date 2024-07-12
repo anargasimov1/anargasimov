@@ -67,7 +67,7 @@
 
 .head_text {
     width: 70%;
-    color: white;
+    color: rgb(16, 16, 16);
 }
 
 
@@ -91,14 +91,17 @@
     padding-left: 10px;
 }
 
-.swiper-slide {
+.slide {
     display: flex;
-    flex-wrap: nowrap;
-    transform: translateX(-100%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    transition: 0.3s ease all;
+    margin-bottom: 50px;
 }
 
 .home-page-swiper {
-    height: 100vh;
+    height: 80vh;
     margin-bottom: 30px;
     overflow: hidden;
 
@@ -107,7 +110,7 @@
 .swiper-slide>img {
     min-width: 100%;
     height: 100vh;
-    object-fit: cover;
+    object-fit: fill;
     opacity: 0.7;
 }
 
@@ -115,56 +118,27 @@
 
 @media only screen and (max-width: 800px) {
 
-    .course-card_video>video {
-        width: 280px;
-    }
-
-    .course-card {
-        width: 300px;
-    }
-
-    .cards {
-        padding: 2px;
-        justify-content: center;
-    }
-
-    .home-page {
-        flex-direction: column;
-        height: auto;
-        gap: 20px;
-    }
-
-    .head_text {
-        width: 250px;
-    }
-
-    .swiper-slide>img {
-        width: 100%;
-        height: 70vh;
-        object-fit: cover;
-        opacity: 0.7;
-    }
-
-    .home-page-swiper {
-        height: 70vh;
-        margin-bottom: 30px;
-
-    }
+   .slide{
+    width: 400px;
+    flex-direction: column;
+    margin-bottom: 50px;
+   }
+   .slide>img{
+    width: 100%;
+   }
 }
 
 @media only screen and (max-width: 400px) {
 
     .swiper-slide>img {
         width: 100%;
-        height: 70vh;
-        object-fit: cover;
+        height: 50vh;
+        object-fit: fill;
         opacity: 0.7;
     }
 
-    .home-page-swiper {
-        width: 400px;
-        height: 70vh;
-        margin-bottom: 30px;
-
+    .slide {
+        width: 372px;
     }
+
 }
