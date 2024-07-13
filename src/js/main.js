@@ -61,7 +61,7 @@ send.onclick = () => {
     else {
         phonerror.innerText = "";
     }
-    if (phone.value.length > 1 && phone.value.length < 9) {
+    if (phone.value.length != "" && phone.value.length < 9 || phone.value.length > 10) {
         phonerror.innerText = "*Nömrəniz formata uyğun deyil!"
     }
     else {

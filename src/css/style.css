@@ -1,41 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: inherit
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth
-}
-
-@media only screen and (max-width: 75em) {
-  html {
-    font-size: 59%
-  }
-}
-
-@media only screen and (max-width: 56.25em) {
-  html {
-    font-size: 56%;
-  }
-}
-
-@media only screen and (min-width: 112.5em) {
-  html {
-    font-size: 65%
-  }
-}
-
-body {
-  box-sizing: border-box;
-  position: relative;
-  line-height: 1.5;
-  font-family: sans-serif;
-  overflow: auto;
-  font-family: 'Source Sans Pro', sans-serif
-}
+@import url('./root.css');
+@import url('./course.css');
+@import url('./icons.css');
 
 a {
   text-decoration: none;
@@ -942,41 +907,4 @@ textarea {
     opacity: 0;
     top: 27px
   }
-}
-
-i {
-  font-size: 20px;
-  margin-left: 10px;
-}
-
-.fa-facebook {
-  color: #7843E9;
-}
-
-.fa-instagram {
-  color: rgb(225, 21, 143);
-}
-
-.fa-linkedin {
-  color: rgb(3, 3, 72);
-}
-
-.fa-youtube {
-  color: rgb(225, 71, 66);
-}
-
-.fa-whatsapp {
-  color: green;
-}
-
-.fa-mobile {
-  color: rgb(84, 84, 15);
-}
-
-.error {
-  font-size: 12px;
-  float: left;
-  margin-left: 10px;
-  color: red;
-  font-weight: 800;
 }

@@ -1,0 +1,36 @@
+i {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .fa-facebook {
+    color: #7843E9;
+  }
+  
+  .fa-instagram {
+    color: rgb(225, 21, 143);
+  }
+  
+  .fa-linkedin {
+    color: rgb(3, 3, 72);
+  }
+  
+  .fa-youtube {
+    color: rgb(225, 71, 66);
+  }
+  
+  .fa-whatsapp {
+    color: green;
+  }
+  
+  .fa-mobile {
+    color: rgb(84, 84, 15);
+  }
+  
+  .error {
+    font-size: 12px;
+    float: left;
+    margin-left: 10px;
+    color: red;
+    font-weight: 800;
+  }
