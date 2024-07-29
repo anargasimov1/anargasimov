@@ -140,5 +140,8 @@
     .slide {
         width: 372px;
     }
+    .course-card_video>video {
+    width: 380px;
+    }
 
 }
