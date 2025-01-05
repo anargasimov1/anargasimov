@@ -32,7 +32,7 @@ clos.onclick = () => {
 }
 
 
-let content = "Sizi saytımda görməyimə çox şadam. Burada sizə özüm haqqında həmçinin proyektlərim və fəaliyyət istiqamətlərim haqqında məlumatlar verəcəm..."
+let content = "I'm very glad to have you on my website..."
 
 
 for (let i = 0; i < content.length; ++i) {
@@ -50,31 +50,25 @@ const namerror = document.getElementById("name_error"),
 
 send.onclick = () => {
     if (names.value.trim() == "") {
-        namerror.innerText = "*Adınızı daxil edin!"
+        namerror.innerText = "*required!"
     }
     else {
         namerror.innerText = "";
     }
     if (phone.value == "") {
-        phonerror.innerText = "*Nömrənizi daxil edin!"
+        phonerror.innerText = "*required!"
     }
     else {
         phonerror.innerText = "";
     }
-    if (phone.value.length != "" && phone.value.length < 9 || phone.value.length > 10) {
-        phonerror.innerText = "*Nömrəniz formata uyğun deyil!"
-    }
-    else {
-        phone.innerText = "";
-    }
     if (email.value.trim() == "") {
-        emilerror.innerText = "*Emailnizi daxil edin"
+        emilerror.innerText = "*required!"
     }
     else {
         emilerror.innerText = "";
     }
     if (message.value.trim() == "") {
-        messagerror.innerText = "*Mesajınızı daxil edin!"
+        messagerror.innerText = "*required!"
     }
     else {
         messagerror.innerText = "";
